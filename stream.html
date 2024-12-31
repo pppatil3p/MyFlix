@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyFlix stream page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0c0c0c;
+            color: aliceblue;}
+        .header {
+            background-color: #1d1c1c;
+            color: #fff;
+            padding: 1px;
+            
+        }
+        nav {
+            background-color: #1a1919;
+            text-align: center;
+        }
+        .search-bar {
+            width: 300px;
+            padding: 5px;
+            border: 2px solid white;
+            border-radius: 15px;
+            margin-right: 10px;
+            background-color: rgb(51, 50, 50); 
+            color: white;
+        }
+        .search-bar::placeholder {
+            color: rgb(240, 233, 233);
+        }
+        button {
+            background-color: #ff0000; 
+            color: white;
+            padding: 5px 10px;
+            border: 2px solid white;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+        .video-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px;
+        }
+        .video {
+            width: 300px;
+            margin: 10px;
+        }
+        label{
+            color: red;
+            padding: 3px;
+            margin: 5px;
+        }
+        .ct{
+            text-align: left;
+        }
+        #choice{
+            background-color: rgb(73, 72, 72);
+            color: white;
+            
+        }
+        button:hover{
+            color: yellow;
+            background-color: rgb(119, 7, 7);
+        }
+        .header h3 {
+    color: white; 
+    text-align: center;
+}
+
+.header h3 span {
+    color: white;
+    background-color: red;
+    padding: 3px;
+    border-radius: 5px;
+
+}
+.hs{
+    text-align: right;
+}
+button.hs{
+    background-color: rgb(52, 51, 51);
+    border: 1px solid rgb(52, 51, 51);
+    border-radius: 5px;
+    margin-right: 2%;
+}
+button.hs:hover{
+    color: #0c0c0c;
+    background-color: gainsboro;
+}
+video-wrapper {
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+}
+
+.caption {
+    color: white;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h3>Welcome to <span>MyFlix</span> </h3>
+</div>
+
+<nav> <div class="se">
+
+    <input type="text" class="search-bar" placeholder="Search...">
+    <button>Search</button>
+</div>
+  <div class="ct">
+    <label for="choice">categories</label>
+    <select name="choice" id="choice">
+        <option value="1">Movies</option>
+        <option value="1">TV Shows</option>
+        <option value="1">Comedy</option>
+        <option value="1">Series</option>
+        <option value="1">Education</option>
+        <option value="1">kids</option>
+        <option value="1">Other</option>
+    </select>
+    <div class="hs">
+        <button id="history" class="hs">History</button> 
+        <button id="subscriptionBtn" class="hs">subscription</button>
+    </div>
+
+  </div>
+</nav>
+
+<div class="video-container">
+    <!-- 1 -->
+    <div class="video">
+        <iframe width="300" height="169" src="assest/vdo/VID_20240428222527.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>
+        <p class="caption">Kalsubai peak</p>
+    </div>
+    <!-- 2 -->
+    <div class="video">
+        <iframe width="300" height="169" src="assest/vdo/VID_20240428222627.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p class="caption">Shegaon</p>
+    </div>
+    <!-- 3 -->
+    <div class="video">
+        <iframe width="300" height="169" src="assest/vdo/VID20240217192617.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p class="caption"> peak camping</p>
+    </div>
+    <!-- 4 -->
+    <div class="video">
+        <iframe width="300" height="169" src="assest/vdo/VID_20240218221133.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p class="caption">maggi making</p>
+    </div>
+    <!-- 5 -->
+    <div class="video">
+        <iframe width="300" height="169" src="assest/vdo/VID-20240301-WA0006.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p class="caption">bhajan</p>
+    </div>
+    <!-- 6 -->
+    <div class="video">
+        <iframe width="300" height="169" src="assest/vdo/VID-20231013-WA0016.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p class="caption">compufest</p>
+    </div>
+    <!-- 7 -->
+    <div class="video">
+        <iframe width="300" height="169" src="assest/vdo/VID_20240428222759.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p class="caption">wt practical</p>
+    </div>
+    <!-- 8 -->
+    <div class="video">
+        <iframe width="300" height="169" src="assest/vdo/VN20240428_110156.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p class="caption"></p>
+    </div>
+    <!-- 9 -->
+    <div class="video">
+        <iframe width="300" height="169" src="assest/vdo/VN20240219_140243.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p class="caption">Kalsubai peak view</p>
+    </div>
+</div>
+
+<script>
+    document.getElementById('subscriptionBtn').addEventListener('click', function() {
+        var subscriptionName = localStorage.getItem('subscriptionName');
+        var price = localStorage.getItem('price');
+        
+        if (subscriptionName && price) {
+            alert('Selected Subscription: ' + subscriptionName + '\nPrice: ₹' + price);
+        } else {
+            alert('No subscription selected.');
+        }
+    });
+    document.getElementById('history').addEventListener('click', function() {
+        alert('No History');
+    });
+</script>
+
+</body>
+</html>

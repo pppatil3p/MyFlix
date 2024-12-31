@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - MyFlix</title>
+    <style>
+        body{
+            background-image:url("assest/bg/bg5.jpeg");
+            background-position: center center;
+            background-size: max(1200px, 100vw);
+            background-repeat: no-repeat;
+            height: 644px;
+            position: relative;
+        }
+        h2 {
+            text-align: center;
+            color: red;
+            font-size: 40px;
+        }
+        p {
+            font-weight: bolder;
+            font-size: 20px;
+            color: goldenrod;
+        }
+        .image img {
+            max-width: 25%;
+            max-height: 100%;
+            width: auto;
+            height: auto;
+        }
+      
+        
+        .watch-button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            text-decoration: none;
+            /* display: inline-block; */
+            top: 500px; 
+        }
+        .watch-button:hover {
+            background-color: #0056b3;
+        }
+        .button-container {
+            position: absolute;
+            top: 40%;
+            right: 50px;
+            transform: translateY(-50%);
+            border: 2px solid wheat;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Subscription Payment</h2>
+
+<div>
+    <p>Subscription Name: <span id="subscriptionName"></span></p>
+    <p class="p2">Price: ₹
+        <span id="subscriptionPrice"></span></p>
+    </div>
+    
+    <div class="image">
+        <img src="assest/bg/qr.jpg" alt="payment" >
+    </div>
+    
+    <div class="button-container">
+        <button class="watch-button" onclick="redirectToStream()">Watch now</button>
+    </div>
+    
+    <script>
+    const params = new URLSearchParams(window.location.search);
+    const subscriptionName = params.get('name');
+    const subscriptionPrice = params.get('price');
+
+    document.getElementById('subscriptionName').textContent = subscriptionName;
+    document.getElementById('subscriptionPrice').textContent = subscriptionPrice;
+   
+
+    function redirectToStream() {
+        window.open('stream.html', '_blank');
+    }
+</script>
+
+    
+    
+    </body>
+    
+</html>
+
+    

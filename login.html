@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - MyFlix</title>
+    <link rel="stylesheet" href="login-style.css">
+</head>
+<style>
+    body{
+
+        background-image:url("assest/bg/login.jpg");
+        background-position: center center;
+    background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
+    height: 644px;
+    position: relative;
+
+    }
+    
+        
+        .form-group input{
+        padding: 7px 60px 5px 12px;
+    color: white;
+    font-size: 20px;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid rgba(246, 238, 238, 0.5);
+    margin: 2px;
+    }
+
+    .main .box {
+    height: 644px;
+    width: 100%;
+    opacity: 0.69;
+    position: absolute;
+    top: -10px;
+    background-color: black;
+    padding: 10px ;
+    left: -10px;
+    margin: auto;
+}
+    .form-group
+    {
+        font-family: 'Martel Sans', sans-serif;
+    height: calc(100% - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 23px;
+    padding: 0 px;
+    height: 644px;
+    background-size:cover;
+    
+    
+
+    }
+    h2
+    { color: red;
+    font-size: 40px;
+}
+    button{
+        background-color: red;
+        padding: 10px 25px;
+        border-radius: 25px;
+        color: antiquewhite;
+        border: 2px solid white;
+        font-size: 20px;
+        
+    }
+</style>
+
+<body>
+
+    <div class="main">
+        <div class="box"></div>
+        <form action="#" onsubmit="redirectToSubscription(event)">
+           
+            <div class="form-group">
+                <h2>Login to MyFlix</h2>
+                <label for="email"></label>
+                <input type="email" id="email" name="email" required placeholder="Enter email">
+                <label for="password"></label>
+                <input type="password" id="password" name="password" required placeholder="Password">
+                <button type="submit">Login</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function redirectToSubscription(event) {
+            event.preventDefault();
+            window.location.href = 'subscription.html';
+        }
+    </script>
+
+</body>
+
+</html>
